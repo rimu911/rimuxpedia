@@ -1,0 +1,21 @@
+diff --git a/etc/bluetooth/main.conf.dist b/etc/bluetooth/main.conf
+index 7c3b1cc..5abc1b7 100644
+--- a/etc/bluetooth/main.conf.dist
++++ b/etc/bluetooth/main.conf
+@@ -1,5 +1,7 @@
+ [General]
+ 
++Privacy=device
++
+ # Default adaper name
+ # Defaults to 'BlueZ X.YZ'
+ #Name = BlueZ
+@@ -87,3 +89,8 @@
+ # This includes adapters present on start as well as adapters that are plugged
+ # in later on. Defaults to 'false'.
+ AutoEnable=true
++
++[LE]
++MinConnectionInterval=7
++MaxConnectionInterval=9
++ConnectionLatency=0

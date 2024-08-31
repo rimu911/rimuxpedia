@@ -1,0 +1,5 @@
+# Disable Keyboard in wired mode
+ACTION=="add|change", ENV{ID_VENDOR_ID}=="248a", ENV{ID_MODEL_ID}=="ffe1", ENV{ID_INPUT_KEYBOARD}="0", ENV{ID_INPUT_KEY}="0", ENV{ID_INPUT_MOUSE}="1"
+
+# Disable Keyboard in wireless
+ACTION=="add|change", ENV{ID_VENDOR_ID}=="248a", ENV{ID_MODEL_ID}=="ffe2", ENV{ID_INPUT_KEYBOARD}="0", ENV{ID_INPUT_KEY}="0", ENV{ID_INPUT_MOUSE}="1"
